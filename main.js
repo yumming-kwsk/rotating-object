@@ -23,7 +23,7 @@ function draw() {
     pointerX = mouseX;
   }
 
-  let index = floor(map(pointerX, 0, width, 0, totalFrames));
+  let index = floor(map(pointerX, 0, width, totalFrames - 1, 0));
   index = constrain(index, 0, totalFrames - 1);
 
   let imgSize = min(width, height);
